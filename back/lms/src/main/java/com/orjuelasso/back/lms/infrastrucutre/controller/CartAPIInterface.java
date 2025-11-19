@@ -1,4 +1,4 @@
-package com.orjuelasso.back.lms.controller;
+package com.orjuelasso.back.lms.infrastrucutre.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 

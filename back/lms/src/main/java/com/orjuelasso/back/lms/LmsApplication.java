@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.orjuelasso.back.lms.testAOP.Test;
 
 @SpringBootApplication
-public class LmsApplication implements CommandLineRunner{
+public class LmsApplication  {
 
 	@Autowired // Inject the Test bean created by Spring
     private Test testBean;
@@ -18,11 +18,11 @@ public class LmsApplication implements CommandLineRunner{
 	}
 
 	// This method runs immediately after the application context is loaded
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println("--- Starting AOP Test ---");
-        testBean.display(); // Call the method on the managed bean
-        System.out.println("--- AOP Test Complete ---");
-    }
+    // @Override
+    // public void run(String... args) throws Exception {
+    //     System.out.println("--- Starting AOP Test ---");
+    //     testBean.display(); // Call the method on the managed bean
+    //     System.out.println("--- AOP Test Complete ---");
+    // }
 
 }
