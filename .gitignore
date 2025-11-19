@@ -1,0 +1,66 @@
+HELP.md
+target/
+.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+Thumbs.db # Windows system files
+*.log
+*.lock
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+# Spring Boot Specific Ignores (back/lms)
+##########################################
+
+# Maven files
+/back/lms/target/ # Compiled classes, war/jar files, etc.
+/back/lms/.mvn/wrapper/maven-wrapper.jar # Often ignored, as wrapper scripts can fetch it
+/back/lms/pom.xml.versionsBackup
+
+# Key Configuration Files (for security - see section 3)
+/back/lms/src/main/resources/application-local.properties
+/back/lms/src/main/resources/application-local.yml
+
+# React/Vite Specific Ignores (front)
+######################################
+
+# Dependency directories
+/front/node_modules/
+
+# Build output
+/front/dist/
+/front/build/
+
+# Package manager files
+/front/npm-debug.log*
+/front/yarn-error.log*
+/front/pnpm-debug.log*
+
+# Environment files (for security - see section 3)
+/front/.env.local
+/front/.env.*.local
